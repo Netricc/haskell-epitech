@@ -1,5 +1,5 @@
--- ! this code don't work for the moment
 
 myInit :: [a]-> [a]
 myInit [] = []
-myInit (xs:_) = xs
+myInit [_] = []
+myInit (x:xs) = x : myInit xs
